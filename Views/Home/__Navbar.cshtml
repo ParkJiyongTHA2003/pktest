@@ -1,0 +1,42 @@
+﻿@{
+    var currentCshtmlName = ViewData["CshtmlName"]?.ToString() ?? string.Empty;
+}
+
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <div class="container-fluid">
+            <!-- Logo Section -->
+            <div class="col-3 d-flex justify-content-start">
+
+            </div>
+
+
+            <!-- Navbar Icons -->
+            <div class="col-3 d-flex justify-content-end align-items-center">
+                <button type="button" class="btn text-primary mx-2" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fa fa-search"></i>
+                </button>
+<a href="/Account/register" class="btn text-primary mx-2" target="_blank">
+    <i class="fa-solid fa-user"></i>
+</a>
+                </button>
+                <button type="button" class="btn text-primary mx-2" data-bs-toggle="modal" data-bs-target="#userModal">
+                <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    @if (currentCshtmlName == string.Empty)
+    {
+        <!-- Hero Start -->
+        @await Html.PartialAsync("__Hero")
+        <!-- Hero Start -->
+    }
+    else
+    {
+        <!-- Header Start -->
+        @await Html.PartialAsync("__Header")
+        <!-- Header Start -->
+    }
+</div>

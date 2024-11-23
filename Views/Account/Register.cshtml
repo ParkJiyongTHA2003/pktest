@@ -1,0 +1,40 @@
+﻿@model RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<div class="container mt-5">
+    <h2>Register</h2>
+    <form asp-action="Register" method="post">
+        <div>
+            <label>Email:</label>
+            <input type="email" asp-for="Email" />
+            <span asp-validation-for="Email"></span> <!-- การแสดงข้อผิดพลาดจาก validation -->
+        </div>
+        <div>
+            <label>Password:</label>
+            <input type="password" asp-for="Password" />
+            <span asp-validation-for="Password"></span> <!-- การแสดงข้อผิดพลาดจาก validation -->
+        </div>
+        <div>
+            <label>Confirm Password:</label>
+            <input type="password" asp-for="ConfirmPassword" />
+            <span asp-validation-for="ConfirmPassword"></span> <!-- การแสดงข้อผิดพลาดจาก validation -->
+        </div>
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- ใส่ข้อความแสดงผลสำหรับการสมัครสมาชิกสำเร็จ -->
+    <div>
+        @if (TempData["Message"] != null)
+        {
+            <p>@TempData["Message"]</p>
+        }
+    </div>
+</div>
+
+@section Scripts {
+    <!-- สคริปต์สำหรับการตรวจสอบ validation ของ ASP.NET Core -->
+    <partial name="_ValidationScriptsPartial" />
+}
