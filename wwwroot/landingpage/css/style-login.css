@@ -1,10 +1,10 @@
 
 /********** Root Pakin CSS **********/
 :root {
-    --primary: #06A3DA;
-    --secondary: #34AD54;
+    --primary: #44d62c;
+    --secondary: #19b300;
     --light: #EEF9FF;
-    --dark: #101010;
+    --dark: #222;
 }
 
 
@@ -181,7 +181,7 @@ body {
 
 @media (min-width: 992px) {
     .navbar-dark {
-        position: relative;
+        position: re;
         width: 100%;
         top: 0;
         left: 0;

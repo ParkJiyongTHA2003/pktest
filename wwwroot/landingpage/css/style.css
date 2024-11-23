@@ -1,5 +1,5 @@
+
 /********** Root Pakin CSS **********/
-/*** Update:ParkJiyong 19:54 21/11/2024 ***/
 :root {
     --primary: #44d62c;
     --secondary: #19b300;
@@ -7,7 +7,6 @@
     --dark: #101010;
 }
 
-/*** Update:ParkJiyong 20:41 21/11/2024 ***/
 .text-primary {
     color: #44d62c !important;
 }
@@ -257,14 +256,14 @@ body {
     width: 1.5rem; /* ลดขนาดไอคอน */
     height: 1.5rem;
     background-color: transparent; /* พื้นหลังใส */
-    border: 2px solid #0e871c; /* กรอบสีฟ้านีออน */
+    border: 2px solid #00ffff; /* กรอบสีฟ้านีออน */
     border-radius: 50%; /* ทำให้เป็นวงกลม */
-    box-shadow: 0 0 10px #29e722, 0 0 20px #c9ffcd, 0 0 30px #4bb934; /* เงาเรืองแสง */
+    box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #00ffff; /* เงาเรืองแสง */
 }
 
 .carousel-control-prev,
 .carousel-control-next {
-    width: 10%; /* ความกว้างของปุ่มควบคุม */    
+    width: 10%; /* ความกว้างของปุ่มควบคุม */
 }
 
 
