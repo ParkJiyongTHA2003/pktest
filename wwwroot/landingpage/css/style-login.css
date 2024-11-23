@@ -181,7 +181,7 @@ body {
 
 @media (min-width: 992px) {
     .navbar-dark {
-        position: re;
+        position: relative;
         width: 100%;
         top: 0;
         left: 0;
@@ -631,7 +631,7 @@ body {
     filter: brightness(50%); /* Optional: Dim background for readability */
 }   
 
-.login-card {
+.login-card,.register-card {
     max-width: 400px;
     margin: 5rem auto; /* Center Card */
     padding: 2rem;
@@ -640,11 +640,18 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.login-card h2 {
-    margin-bottom: 1.5rem;
+.login-card h2,
+.register-card h2 {
+    margin-bottom: 1rem;
     font-weight: bold;
+    color: #2a811b;
     text-align: center;
-    color: #007bff;
+}
+
+.login-card p,
+.register-card p {
+    color:#000000 50;
+    text-align: center;
 }
 
 .login-card label {
@@ -652,12 +659,19 @@ body {
     color: #555;
 }
 
-.login-card .form-control {
+.login-card .form-control,
+.register-card .form-control {
     border-radius: 10px;
     padding: 0.75rem;
     margin-bottom: 1rem;
 }
 
+.form-group input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    font-size: 1em;
+}
 .btn-primary {
     width: 100%;
     border-radius: 10px;

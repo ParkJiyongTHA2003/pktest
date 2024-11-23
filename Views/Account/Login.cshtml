@@ -5,13 +5,14 @@
 <body>
     <!-- Fullscreen Background -->
     <div class="bg-container">
-        <img src="/landingpage/bg-login.jpg" alt="Background" class="bg-fullscreen">
+        <img src="/landingpage/img/bg-login.jpg" alt="Background" class="bg-fullscreen">
     </div>
 
     <!-- Login Card -->
     <div class="container">
         <div class="login-card">
-            <h2>Login</h2>
+            <h2>Sign in</h2>
+            <p>Please enter your login and password!</p>
 
             <!-- Error Message -->
             @if (ViewBag.ErrorMessage != null)
@@ -23,7 +24,7 @@
 
             <form asp-action="Login" method="post">
                 <div class="form-group">
-                    <label for="Email">Email:</label>
+                    <label for="Email">Email:</label>   
                     <input type="email" asp-for="Email" class="form-control">
                     <span asp-validation-for="Email" class="text-danger"></span>
                 </div>
