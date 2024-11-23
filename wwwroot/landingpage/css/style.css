@@ -11,6 +11,14 @@
     color: #44d62c !important;
 }
 
+.bg-primary {
+    background-color: #44d62c !important;
+}
+
+.bg-light {
+    background-color: #f7f7f7 !important;
+}
+
 /*** Spinner ***/
 .spinner {
     width: 40px;
@@ -256,9 +264,9 @@ body {
     width: 1.5rem; /* ลดขนาดไอคอน */
     height: 1.5rem;
     background-color: transparent; /* พื้นหลังใส */
-    border: 2px solid #00ffff; /* กรอบสีฟ้านีออน */
+    border: 2px solid var(--primary); /* กรอบสีฟ้านีออน */
     border-radius: 50%; /* ทำให้เป็นวงกลม */
-    box-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff, 0 0 30px #00ffff; /* เงาเรืองแสง */
+    box-shadow: 0 0 10px var(--primary), 0 0 20px var(--light), 0 0 30px var(--primary); /* เงาเรืองแสง */
 }
 
 .carousel-control-prev,
